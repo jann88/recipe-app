@@ -33,6 +33,9 @@ body {
 header{
     margin: 1rem 1rem;
 }
+h1, h3{
+    color: limegreen;
+}
 .header input{
     background-color: #eee;
     border: none;
@@ -75,6 +78,7 @@ header{
 .fav__meals span {
     font-size: .8rem;
     font-weight:lighter;
+    color: limegreen;
 }
 
 .meal{
