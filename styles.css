@@ -9,8 +9,6 @@
 }
 img{
 width: 100%;
-height: 300px;
-width: 300px;
 }
 body {
     display: grid;
@@ -18,6 +16,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-color: aliceblue;
+    font-family:'Poppins', sans-serif;
 }
 .mobile__container{
     background-color: white;
@@ -26,7 +25,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1.5rem;
+
+    box-shadow: 0 0 10px 2px #3333331a;
+    overflow: hidden;
+    border-radius: .5rem;
 }
 header{
     margin: 1rem 1rem;
@@ -44,4 +46,72 @@ header{
     margin-left: .5rem;
 
 }
+.favorite__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    overflow: hidden;
+    /* padding: 1rem; */
+}
+.favorite__container h3{
+    margin-bottom: 1rem;
+}
+.fav__meals{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    justify-content: center;
+    list-style-type: none;
+}
+.fav__meals li img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+}
+.fav__meals span {
+    font-size: .8rem;
+    font-weight:lighter;
+}
 
+.meal{
+        box-shadow: 0 0 10px 2px #3333331a;
+        border-radius: .2rem;
+        overflow: hidden;
+        margin: .2rem;
+    }
+.meal__header{
+    position: relative;
+}
+.meal__header .random{
+    position: absolute;
+    top: 10px;
+    background-color: #fff;
+    border-top-right-radius: .1em;
+    border-bottom-right-radius: .1em;
+    padding: .2em;
+
+}
+.meal__header img{
+    height: 550px;
+    object-fit: cover;
+
+}
+.meal__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8em;
+}
+.meal__body .fav_btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.meal__body .fav_btn.active{
+color: blueviolet;
+}
